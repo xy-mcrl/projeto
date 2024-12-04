@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Pode ser removido se preferir apenas a imagem */
+    margin: 0;
+    padding: 20px;
+    background-image: url('image/fundo.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+.login-card, .register-card {
+    width: 300px;
+    margin: 30px auto;
+    padding: 60px;
+    border: 1px solid #ccccccd0;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+    box-shadow: 2px 2px 10px #ccc;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.log {
+    margin: 0;
+    font-size: 30px; /* Aumentado de 24px para 30px */
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 20px; /* Aumentado de 18px para 20px */
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 19px; /* Mantenha este valor se não quiser mudar o tamanho do input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+input[type="submit"], button {
+    width: 100%;
+    background-color: rgb(17, 203, 216);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: rgba(101, 240, 250, 0.856);
+    color: rgb(0, 0, 0);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.toggle-link {
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+    text-decoration: underline;
+}
+
+header {
+    background: rgb(17, 203, 216);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px; /* Ajuste o tamanho do cabeçalho principal se necessário */
+}
+
+.tabs {
+    display: flex;
+    cursor: pointer;
+    background: #e8e8e8;
+    margin: 20px 0;
+    border-radius: 10px; /* Arredonda os cantos da barra de abas */
+    overflow: hidden; /* Para garantir que os filhos não ultrapassem os limites */
+}
+
+.tab {
+    flex: 1; /* Faz com que cada aba ocupe igual espaço */
+    padding: 15px; /* Aumentado o padding para mais espaço interno */
+    text-align: center; /* Centraliza o texto dentro da aba */
+    border: 1px solid #ccc;
+    background: rgb(17, 203, 216);
+    transition: background 0.3s, color 0.3s; /* Transições suaves para fundo e cor */
+    font-size: 18px; /* Aumente o tamanho da fonte se necessário */
+}
+
+.tab:hover {
+    background: rgba(101, 240, 250, 0.856); /* Cor de fundo ao passar o mouse */
+    color: rgb(4, 19, 20); /* Muda a cor do texto ao passar o mouse */
+}
+
+.tab.active {
+    background: rgb(17, 203, 216); /* Cor de fundo para a aba ativa */
+    color: white; /* Cor do texto para a aba ativa */
+    font-weight: bold; /* Destaca a aba ativa */
+}
+
+
+.card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #ccc;
+    display: none; /* Oculta por padrão */
+}
+
+.card.active {
+    display: block; /* Exibe apenas a aba ativa */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#edit-modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17, 203, 216);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgb(17, 203, 216);
+}
